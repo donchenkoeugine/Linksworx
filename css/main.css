@@ -232,6 +232,14 @@ p {
   position: fixed;
   z-index: -1; }
 
+.bg_choose {
+  background: url("../img/bg_choose_us.jpg") no-repeat center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -2; }
+
 header {
   font-size: 1rem;
   background: #191919 url("../img/bgimage.jpg") no-repeat center;
@@ -365,6 +373,7 @@ section {
       margin-top: 2.5em;
       opacity: 0; }
   #waypoint_1 .about_us_2 {
+    margin-top: 5%;
     padding: 25% 0 15%; }
     #waypoint_1 .about_us_2 .stacker {
       position: relative;
@@ -386,7 +395,8 @@ section {
 #waypoint_3 {
   background: #ada697 url("/img/bg_our_service.jpg") no-repeat center;
   background-size: cover;
-  padding: 7.5% 0; }
+  padding: 7.5% 0;
+  min-height: 100vh; }
   #waypoint_3 h2 {
     text-align: center; }
   #waypoint_3 .red_line {
@@ -397,7 +407,7 @@ section {
     width: 100%; }
     #waypoint_3 table .mid_td {
       width: 10%;
-      height: 7em; }
+      height: 8em; }
     #waypoint_3 table .left_td, #waypoint_3 table .right_td {
       width: 45%; }
     #waypoint_3 table .left_td {
@@ -412,8 +422,8 @@ section {
       background-size: 4.5em; }
 
 #waypoint_4 {
-  background: #05080d url("/img/bg_choose_us.jpg") no-repeat center;
-  background-size: cover;
+  min-height: 100vh;
+  background-color: transparent;
   color: #fff; }
   #waypoint_4 .left_side_choose img {
     width: 85%;
@@ -505,12 +515,20 @@ section {
     padding-right: 0; } }
 
 @media (min-width: 1400px) {
+  h2 {
+    font-size: 2.5em; }
+  p {
+    font-size: 1.5em; }
   .container {
     width: 1370px; }
   header {
     font-size: 1.1rem; }
   .company_name h5 {
-    padding-right: 10%; } }
+    padding-right: 10%; }
+  #waypoint_4 .right_side_choose h2 {
+    margin-top: 23%; }
+  #waypoint_4 .right_side_choose table {
+    margin-top: 2em; } }
 
 @media (min-width: 1700px) {
   .logo img {

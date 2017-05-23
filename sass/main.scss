@@ -162,6 +162,15 @@ p {
 	position: fixed;
 	z-index: -1;
 }
+.bg_choose {
+	background: url('../img/bg_choose_us.jpg') no-repeat center;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: -2;
+	// visibility: hidden;
+}
 header {
 	font-size: 1rem;
 	background: $bgcolor-in-header url('../img/bgimage.jpg') no-repeat center;
@@ -300,6 +309,7 @@ section {
 		}
 	}
 	.about_us_2 {
+		margin-top: 5%;
 		padding: 25% 0 15%;
 		.stacker {
 			position: relative;
@@ -328,6 +338,7 @@ section {
 	background: #ada697 url('/img/bg_our_service.jpg') no-repeat center;
 	background-size: cover;
 	padding: 7.5% 0;
+	min-height: 100vh;
 	h2 {
 		text-align: center;
 	}
@@ -340,7 +351,7 @@ section {
 		width: 100%;
 		.mid_td {
 			width: 10%;
-			height: 7em;
+			height: 8em;
 		}
 		.left_td, .right_td {
 			width: 45%;
@@ -361,8 +372,10 @@ section {
 }
 
 #waypoint_4 {
-	background: #05080d url('/img/bg_choose_us.jpg') no-repeat center;
-	background-size: cover;
+	// background: #05080d url('/img/bg_choose_us.jpg') no-repeat center;
+	// background-size: cover;
+	min-height: 100vh;
+	background-color: transparent;
 	color: $color-in-header;
 	.left_side_choose {
 		img {
