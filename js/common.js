@@ -52,3 +52,33 @@ $(function() {
 var header = document.getElementsByTagName('header')[0];
 
 header.style.height = screen.availHeight + 'px';
+
+
+var wrapNav = document.getElementsByClassName('wrapNav')[0];
+
+var makeCounter = function() {
+	var count = 0,
+		prevScrollY = window.pageYOffset;
+	return function() {
+		var currentScrollY = window.pageYOffset;
+		if (currentScrollY < screen.availHeight) {
+			wrapNav.classList.remove('fixedNav');
+			return;
+		}
+		count++;
+		if (count == 30) {
+			count = 0;
+			if (prevScrollY > currentScrollY) {
+				wrapNav.classList.add('fixedNav');
+			} else {
+				wrapNav.classList.remove('fixedNav');
+			};
+		}
+		prevScrollY = currentScrollY;
+	}
+};
+
+var counter = makeCounter();
+
+
+window.onscroll = counter;
