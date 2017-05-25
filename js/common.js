@@ -14,9 +14,16 @@ function showPage() {
 	loader.style.display = "none";
 	document.body.style.overflow = "auto";
 	myPage.style.opacity = '1';
-	document.querySelector('.company_name h1').style.animationPlayState = "running"
-	document.querySelector('.company_name h5').style.animationPlayState = "running"
+	document.querySelector('.company_name h1').style.animationPlayState = "running";
+	document.querySelector('.company_name h5').style.animationPlayState = "running";
 }
+
+document.querySelector('.company_name h1').addEventListener("animationend", function() {
+	document.querySelector('.bg_above').style.visibility = 'visible';
+});
+document.querySelector('.company_name h1').addEventListener("animationend", function() {
+	document.querySelector('.bg_choose').style.visibility = 'visible';
+});
 window.addEventListener("DOMContentLoaded", hidePage);
 // setTimeout(showPage, 3000);
 window.addEventListener("load", showPage);
@@ -49,12 +56,11 @@ $(function() {
 });
 //=============== End "Mmenu-jquery" ====================
 
-var header = document.getElementsByTagName('header')[0];
+var header = document.querySelector('header');
 
 header.style.height = screen.availHeight + 'px';
 
-
-var wrapNav = document.getElementsByClassName('wrapNav')[0];
+var wrapNav = document.querySelector('.wrapNav');
 
 var makeCounter = function() {
 	var count = 0,

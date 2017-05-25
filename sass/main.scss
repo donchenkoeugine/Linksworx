@@ -14,6 +14,23 @@ $details-color-header: red;
 		opacity: 1;
 	}
 }
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
 @keyframes flipInX {
   from {
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
@@ -47,28 +64,6 @@ $details-color-header: red;
 	animation-fill-mode: both;
 	backface-visibility: visible !important;
 }
-@keyframes zoomInLeft {
-  from {
-    opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-  }
-
-  60% {
-    opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-  }
-  to {
-  	opacity: 1;
-  }
-}
-
-.zoomInLeft {
-  animation-name: zoomInLeft;
-  animation-duration: 1.5s;
-  animation-fill-mode: both;
-}
 @keyframes moveDownContainer {
 	from {
 		margin-top: -300%;
@@ -79,7 +74,7 @@ $details-color-header: red;
 }
 .moveDownContainer {
 	animation-name: moveDownContainer;
-	animation-duration: 2s;
+	animation-duration: 1.5s;
 	animation-fill-mode: forwards;
 }
 @keyframes moveStacker {
@@ -95,8 +90,6 @@ $details-color-header: red;
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
 }
-
-
 @keyframes bounceInRight {
   from, 60%, 75%, 90%, to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -125,7 +118,6 @@ $details-color-header: red;
     transform: none;
   }
 }
-
 .bounceInRight {
 	animation-name: bounceInRight;
 	animation-duration: 2.5s;
@@ -161,6 +153,7 @@ p {
 	height: 100vh;
 	position: fixed;
 	z-index: -1;
+	visibility: hidden;
 }
 .bg_choose {
 	background: url('../img/bg_choose_us.jpg') no-repeat center;
@@ -169,7 +162,7 @@ p {
 	height: 100vh;
 	position: fixed;
 	z-index: -2;
-	// visibility: hidden;
+	visibility: hidden;
 }
 header {
 	font-size: 1rem;

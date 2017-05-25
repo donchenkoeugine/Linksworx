@@ -30,7 +30,7 @@ about_us1.style.height = about_us1.offsetHeight + 'px';
 about_waypoint1.options.offset = 200;
 about_waypoint1.callback = function() {
 	about_title.classList.add('flipInX');
-	about_txt[0].classList.add('zoomInLeft');
+	about_txt[0].classList.add('fadeInLeft');
 	about_seaContainer.classList.add('moveDownContainer');
 }
 about_waypoint2.callback = function() {
