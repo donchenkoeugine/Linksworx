@@ -40,12 +40,36 @@
 		}
 	}
 }
-// @media (min-width: 992px) {
-
-// }
-// @media (min-width: 1200px) {
-
-// }
+@media (min-width: 992px) {
+	p {
+		font-size: 1em;
+	}
+	h3 {
+		font-size: 1em;
+	}
+	#waypoint_4 {
+		.right_side_choose {
+			h2 {
+				margin-top: 20%;
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	p {
+		font-size: 1.3em;
+	}
+	h3 {
+		font-size: 1.3em;
+	}
+	#waypoint_4 {
+		.right_side_choose {
+			h2 {
+				margin-top: 22%;
+			}
+		}
+	}
+}
 @media (min-width: 1400px) {
 	h2 {
 		font-size: 2.5em;
@@ -74,6 +98,26 @@
 			}
 		}
 	}
+	#waypoint_6 {
+		h2 {
+			margin-top: 10%;
+		}
+		form {
+			input[type="text"] {
+				width: 520px;
+				padding-left: 75px;
+			}
+			.message {
+				width: 520px;
+				height: 270px;
+				textarea {
+					width: 504px;
+					height: 220px;
+					padding-left: 75px;
+				}
+			}
+		}
+	}
 }
 @media (min-width: 1700px) {
 	.logo {
@@ -94,7 +138,7 @@
 	}
 	header {
 		.square {
-			width: 23em;
+			width: 21em;
 		}
 	}
 	h2 {
@@ -109,6 +153,31 @@
 	header {
 		font-size: 1.35rem;
 	}
+	#waypoint_3 {
+		table {
+			margin-top: 6%;
+			width: 100%;
+			.mid_td {
+				width: 10%;
+				height: 10em;
+			}
+			.left_td, .right_td {
+				width: 45%;
+			}
+			.left_td {
+				text-align: right;
+				padding: 1em 6em 1em 0;
+				background: url("../img/icon_sky_arrow.png") no-repeat right center;
+				background-size: 5.5em;
+			}
+			.right_td {
+				text-align: left;
+				padding: 1em 0 1em 6em;
+				background: url("../img/icon_sky_arrow.png") no-repeat left center;
+				background-size: 5.5em;
+			}
+		}		
+	}
 	#waypoint_4 {
 		.right_side_choose {
 			h2 {
@@ -116,6 +185,27 @@
 			}
 			table {
 				margin-top: 2em;
+			}
+		}
+	}
+	#waypoint_6 {
+		h2 {
+			margin-top: 10%;
+		}
+		form {
+			input[type="text"] {
+				width: 550px;
+				height: 61px;
+				padding-left: 75px;
+			}
+			.message {
+				width: 550px;
+				height: 270px;
+				textarea {
+					padding-left: 75px;
+					width: 544px;
+					height: 220px;
+				}
 			}
 		}
 	}

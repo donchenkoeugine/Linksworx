@@ -346,7 +346,7 @@ header {
   overflow: hidden; }
   #waypoint_1 .bg_about {
     position: absolute;
-    background: #aea99d url("/img/bg_about_us.jpg") no-repeat center;
+    background: #aea99d url("../img/bg_about_us.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
     width: 100%; }
@@ -369,8 +369,7 @@ header {
       margin-top: 2.5em;
       opacity: 0; }
   #waypoint_1 .about_us_2 {
-    margin-top: 5%;
-    padding: 25% 0 15%; }
+    padding: 15% 0; }
     #waypoint_1 .about_us_2 .stacker {
       position: relative;
       width: 100%;
@@ -389,7 +388,7 @@ header {
     padding: 3em; }
 
 #waypoint_3 {
-  background: #ada697 url("/img/bg_our_service.jpg") no-repeat center;
+  background: #ada697 url("../img/bg_our_service.jpg") no-repeat center;
   background-size: cover;
   padding: 7.5% 0;
   min-height: 100vh; }
@@ -425,8 +424,7 @@ header {
     width: 85%;
     margin: 20% 0; }
   #waypoint_4 .right_side_choose h2 {
-    text-align: center;
-    margin-top: 22%; }
+    text-align: center; }
   #waypoint_4 .right_side_choose .red_line {
     width: 9em;
     margin: 5px auto 0 auto; }
@@ -463,20 +461,66 @@ header {
         width: 80%; }
 
 #waypoint_6 {
-  background: url("../img/man.jpg") no-repeat center bottom;
+  background-color: #040308;
+  background: url("../img/man.jpg") no-repeat right bottom;
   background-size: cover;
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
   color: #fff;
-  padding: 5% 0;
   border-bottom: 3px solid red; }
+  #waypoint_6 .left_question {
+    padding: 5% 0; }
+  #waypoint_6 h2 {
+    margin-top: 3%; }
   #waypoint_6 .red_line {
     width: 13em;
     margin-top: 5px; }
+  #waypoint_6 form {
+    margin-top: 10%; }
+    #waypoint_6 form input[type="text"] {
+      margin-bottom: 4%;
+      color: #fff;
+      border: none;
+      outline: none !important;
+      width: 435px;
+      height: 46px;
+      line-height: 45px;
+      padding: 0 10px 0 60px; }
+    #waypoint_6 form input[name="name"] {
+      background: url("../img/field_name.png") no-repeat;
+      background-size: 100% 99%; }
+    #waypoint_6 form input[name="email"] {
+      background: url("../img/field_email.png") no-repeat;
+      background-size: 100% 99%; }
+    #waypoint_6 form .message {
+      width: 435px;
+      height: 190px;
+      background: url("../img/field_message.png") no-repeat;
+      background-size: 100%; }
+      #waypoint_6 form .message textarea {
+        margin: 3px 0;
+        width: 419px;
+        height: 140px;
+        background: transparent;
+        border: none;
+        padding-left: 60px;
+        resize: none; }
+    #waypoint_6 form input[type="image"] {
+      background: url("../img/button_send.png") no-repeat;
+      background-size: 100% 99%;
+      padding: 10px 30px;
+      text-transform: uppercase; }
 
 #waypoint_7 {
-  height: 50vh;
-  border-bottom: 3px solid red; }
+  height: 40vh;
+  border-bottom: 3px solid red;
+  position: relative; }
+  #waypoint_7 .overlay {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    top: 0;
+    left: 0; }
 
 #my-footer {
   background: url("../img/footer.jpg") no-repeat center center;
@@ -510,6 +554,22 @@ header {
   .company_name h5 {
     padding-right: 0; } }
 
+@media (min-width: 992px) {
+  p {
+    font-size: 1em; }
+  h3 {
+    font-size: 1em; }
+  #waypoint_4 .right_side_choose h2 {
+    margin-top: 20%; } }
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 1.3em; }
+  h3 {
+    font-size: 1.3em; }
+  #waypoint_4 .right_side_choose h2 {
+    margin-top: 22%; } }
+
 @media (min-width: 1400px) {
   h2 {
     font-size: 2.5em; }
@@ -524,7 +584,19 @@ header {
   #waypoint_4 .right_side_choose h2 {
     margin-top: 23%; }
   #waypoint_4 .right_side_choose table {
-    margin-top: 2em; } }
+    margin-top: 2em; }
+  #waypoint_6 h2 {
+    margin-top: 10%; }
+  #waypoint_6 form input[type="text"] {
+    width: 520px;
+    padding-left: 75px; }
+  #waypoint_6 form .message {
+    width: 520px;
+    height: 270px; }
+    #waypoint_6 form .message textarea {
+      width: 504px;
+      height: 220px;
+      padding-left: 75px; } }
 
 @media (min-width: 1700px) {
   .logo img {
@@ -536,7 +608,7 @@ header {
   .company_name h5 {
     font-size: 1.2em; }
   header .square {
-    width: 23em; }
+    width: 21em; }
   h2 {
     font-size: 3.5em; }
   p {
@@ -545,10 +617,41 @@ header {
     width: 1670px; }
   header {
     font-size: 1.35rem; }
+  #waypoint_3 table {
+    margin-top: 6%;
+    width: 100%; }
+    #waypoint_3 table .mid_td {
+      width: 10%;
+      height: 10em; }
+    #waypoint_3 table .left_td, #waypoint_3 table .right_td {
+      width: 45%; }
+    #waypoint_3 table .left_td {
+      text-align: right;
+      padding: 1em 6em 1em 0;
+      background: url("../img/icon_sky_arrow.png") no-repeat right center;
+      background-size: 5.5em; }
+    #waypoint_3 table .right_td {
+      text-align: left;
+      padding: 1em 0 1em 6em;
+      background: url("../img/icon_sky_arrow.png") no-repeat left center;
+      background-size: 5.5em; }
   #waypoint_4 .right_side_choose h2 {
     margin-top: 25%; }
   #waypoint_4 .right_side_choose table {
-    margin-top: 2em; } }
+    margin-top: 2em; }
+  #waypoint_6 h2 {
+    margin-top: 10%; }
+  #waypoint_6 form input[type="text"] {
+    width: 550px;
+    height: 61px;
+    padding-left: 75px; }
+  #waypoint_6 form .message {
+    width: 550px;
+    height: 270px; }
+    #waypoint_6 form .message textarea {
+      padding-left: 75px;
+      width: 544px;
+      height: 220px; } }
 
 .loaderArea {
   background-color: #191919;

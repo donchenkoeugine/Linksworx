@@ -218,14 +218,23 @@
 			<section id="waypoint_6" class="waypoint">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 left_question">
 							<h2>Do you have question?</h2>
 							<div class="red_line"></div>
+							<form>
+								<input type="text" name="name" maxlength="40" placeholder="Name">
+								<input type="text" name="email" maxlength="40" placeholder="Email address">
+								<div class="message">
+									<textarea name="message" placeholder="Message"></textarea>
+								</div>
+								<input type="image" name="sendMessage" value='Send Message'>
+							</form>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section id="waypoint_7" class="waypoint">
+				<div class="overlay" onClick="style.pointerEvents='none'"></div>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1282.6214349543538!2d36.2336128!3d49.9880559!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1495377857138" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</section>
 		</div>

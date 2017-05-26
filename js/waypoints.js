@@ -1,17 +1,17 @@
-var about_us1 = document.getElementsByClassName('about_us_1')[0],
-	about_title = document.getElementsByClassName('about_title')[0],
+var about_us1 = document.querySelector('.about_us_1'),
+	about_title = document.querySelector('.about_title'),
 	about_txt = document.getElementsByClassName('about_txt'),
-	about_seaContainer = document.getElementsByClassName('sea_container')[0],
-	about_stacker = document.getElementsByClassName('stacker')[0],
+	about_seaContainer = document.querySelector('.sea_container'),
+	about_stacker = document.querySelector('.stacker'),
 	above = document.getElementById('waypoint_2'),
 	waypoint1 = new Waypoint({element: document.getElementById('waypoint_1'), handler: function(){}}),
 	waypoint2 = new Waypoint({element: above, handler: function(){}}),
 	waypoint2_2 = new Waypoint({element: above, handler: function(){}}),
 	about_waypoint1 = new Waypoint({element: document.getElementById('waypoint_1'), handler: function(){}}),
 	about_waypoint2 = new Waypoint({element: about_txt[0], handler: function(){}}),
-	aboutBg = document.getElementsByClassName('bg_about')[0],
-	aboveBg = document.getElementsByClassName('bg_above')[0],
-	chooseBg = document.getElementsByClassName('bg_choose')[0];
+	aboutBg = document.querySelector('.bg_about'),
+	aboveBg = document.querySelector('.bg_above'),
+	chooseBg = document.querySelector('.bg_choose');
 
 waypoint1.callback = function(direction) {
 	aboutBg.classList.toggle('fixbg');
@@ -26,7 +26,7 @@ waypoint2.callback = function(direction) {
 	aboutBg.classList.toggle('fixbg');
 	aboutBg.classList.toggle('fixdown');
 }
-about_us1.style.height = about_us1.offsetHeight + 'px';
+// about_us1.style.height = about_us1.offsetHeight + 'px';
 about_waypoint1.options.offset = 200;
 about_waypoint1.callback = function() {
 	about_title.classList.add('flipInX');

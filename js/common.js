@@ -56,9 +56,13 @@ $(function() {
 });
 //=============== End "Mmenu-jquery" ====================
 
-var header = document.querySelector('header');
+var header = document.querySelector('header'),
+	about_us1 = document.querySelector('.about_us_1'),
+	about_us2 = document.querySelector('.about_us_2');
 
-header.style.height = screen.availHeight + 'px';
+header.style.height = Math.max(window.innerHeight, screen.availHeight) + 'px';
+about_us1.style.height = screen.availHeight + 'px';
+about_us2.style.height = screen.availHeight + 'px';
 
 var wrapNav = document.querySelector('.wrapNav');
 

@@ -276,7 +276,7 @@ header {
 	overflow: hidden;
 	.bg_about {
 		position: absolute;
-		background: #aea99d url('/img/bg_about_us.jpg') no-repeat center;
+		background: #aea99d url('../img/bg_about_us.jpg') no-repeat center;
 		background-size: cover;
 		height: 100vh;
 		width: 100%;
@@ -307,8 +307,8 @@ header {
 		}
 	}
 	.about_us_2 {
-		margin-top: 5%;
-		padding: 25% 0 15%;
+		// margin-top: 5%;
+		padding: 15% 0;
 		.stacker {
 			position: relative;
 			width: 100%;
@@ -333,7 +333,7 @@ header {
 }
 
 #waypoint_3 {
-	background: #ada697 url('/img/bg_our_service.jpg') no-repeat center;
+	background: #ada697 url('../img/bg_our_service.jpg') no-repeat center;
 	background-size: cover;
 	padding: 7.5% 0;
 	min-height: 100vh;
@@ -370,8 +370,6 @@ header {
 }
 
 #waypoint_4 {
-	// background: #05080d url('/img/bg_choose_us.jpg') no-repeat center;
-	// background-size: cover;
 	min-height: 100vh;
 	background-color: transparent;
 	color: $color-in-header;
@@ -384,7 +382,6 @@ header {
 	.right_side_choose {
 		h2 {
 			text-align: center;
-			margin-top: 22%;
 		}
 		.red_line {
 			width: 9em;
@@ -439,21 +436,77 @@ header {
 }
 
 #waypoint_6 {
-	background: url('../img/man.jpg') no-repeat center bottom;
+	background-color: #040308;
+	background: url('../img/man.jpg') no-repeat right bottom;
 	background-size: cover;
-	height: 100vh;
-	width: 100%;
+	min-height: 100vh;
 	color: $color-in-header;
-	padding: 5% 0;
 	border-bottom: 3px solid $details-color-header;
+	.left_question {
+		padding: 5% 0;
+	}
+	h2 {
+		margin-top: 3%;
+	}
 	.red_line {
 		width: 13em;
 		margin-top: 5px;
 	}
+	form {
+		margin-top: 10%;
+		input[type="text"] {
+			margin-bottom: 4%;
+			color: $active-color-menu;
+			border: none;
+			outline: none !important;
+			width: 435px;
+			height: 46px;
+			line-height: 45px;
+			padding: 0 10px 0 60px;
+		}
+		input[name="name"] {
+			background: url('../img/field_name.png') no-repeat;
+			background-size: 100% 99%;
+		}
+		input[name="email"] {
+			background: url('../img/field_email.png') no-repeat;
+			background-size: 100% 99%;
+		}
+		.message {
+			width: 435px;
+			height: 190px;
+			background: url('../img/field_message.png') no-repeat;
+			background-size: 100%;
+			textarea {
+				margin: 3px 0;
+				width: 419px;
+				height: 140px;
+				background: transparent;
+				border: none;
+				padding-left: 60px;
+				resize: none;
+			}
+		}	
+		input[type="image"] {
+			background: url('../img/button_send.png') no-repeat;
+			background-size: 100% 99%;
+			padding: 10px 30px;
+			text-transform: uppercase;
+		}
+	}
 }
 #waypoint_7 {
-	height: 50vh;
+	height: 40vh;
 	border-bottom: 3px solid $details-color-header;
+	position: relative;
+	.overlay {
+	    background: transparent;
+	    position: absolute;
+	    width: 100%;
+	    height: 40vh;
+	    top: 0;
+	    left: 0;
+	}
 }
 
 #my-footer {
