@@ -67,9 +67,11 @@ $details-color-header: red;
 @keyframes moveDownContainer {
 	from {
 		margin-top: -300%;
+		opacity: 1;
 	}
 	to {
 		margin-top: -54%;
+		opacity: 1;
 	}
 }
 .moveDownContainer {
@@ -290,10 +292,11 @@ header {
 		bottom: 0;
 	}
 	.about_us_1 {
-		padding-top: 20%;
+		padding: 20% 0;
 		.sea_container {
 			width: 100%;
-			margin-top: -300%;
+			margin-top: -54%;
+			opacity: 0;
 		}
 		.red_line {
 			width: 6em;
@@ -307,8 +310,7 @@ header {
 		}
 	}
 	.about_us_2 {
-		// margin-top: 5%;
-		padding: 15% 0;
+		padding-bottom: 10%;
 		.stacker {
 			position: relative;
 			width: 100%;
@@ -335,8 +337,7 @@ header {
 #waypoint_3 {
 	background: #ada697 url('../img/bg_our_service.jpg') no-repeat center;
 	background-size: cover;
-	padding: 7.5% 0;
-	min-height: 100vh;
+	padding: 8.5% 0;
 	h2 {
 		text-align: center;
 	}
@@ -370,13 +371,12 @@ header {
 }
 
 #waypoint_4 {
-	min-height: 100vh;
+	padding: 7.5% 0;
 	background-color: transparent;
 	color: $color-in-header;
 	.left_side_choose {
 		img {
 			width: 85%;
-			margin: 20% 0;
 		}
 	}
 	.right_side_choose {
@@ -439,7 +439,6 @@ header {
 	background-color: #040308;
 	background: url('../img/man.jpg') no-repeat right bottom;
 	background-size: cover;
-	min-height: 100vh;
 	color: $color-in-header;
 	border-bottom: 3px solid $details-color-header;
 	.left_question {
@@ -483,6 +482,7 @@ header {
 				height: 140px;
 				background: transparent;
 				border: none;
+				outline: none;
 				padding-left: 60px;
 				resize: none;
 			}
@@ -492,6 +492,8 @@ header {
 			background-size: 100% 99%;
 			padding: 10px 30px;
 			text-transform: uppercase;
+			outline: none;
+			border: none;
 		}
 	}
 }

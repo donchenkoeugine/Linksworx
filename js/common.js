@@ -61,8 +61,8 @@ var header = document.querySelector('header'),
 	about_us2 = document.querySelector('.about_us_2');
 
 header.style.height = Math.max(window.innerHeight, screen.availHeight) + 'px';
-about_us1.style.height = screen.availHeight + 'px';
-about_us2.style.height = screen.availHeight + 'px';
+// about_us1.style.height = screen.availHeight + 'px';
+// about_us2.style.height = screen.availHeight + 'px';
 
 var wrapNav = document.querySelector('.wrapNav');
 

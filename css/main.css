@@ -98,15 +98,19 @@
 
 @-webkit-keyframes moveDownContainer {
   from {
-    margin-top: -300%; }
+    margin-top: -300%;
+    opacity: 1; }
   to {
-    margin-top: -54%; } }
+    margin-top: -54%;
+    opacity: 1; } }
 
 @keyframes moveDownContainer {
   from {
-    margin-top: -300%; }
+    margin-top: -300%;
+    opacity: 1; }
   to {
-    margin-top: -54%; } }
+    margin-top: -54%;
+    opacity: 1; } }
 
 .moveDownContainer {
   -webkit-animation-name: moveDownContainer;
@@ -357,10 +361,11 @@ header {
   #waypoint_1 .fixdown {
     bottom: 0; }
   #waypoint_1 .about_us_1 {
-    padding-top: 20%; }
+    padding: 20% 0; }
     #waypoint_1 .about_us_1 .sea_container {
       width: 100%;
-      margin-top: -300%; }
+      margin-top: -54%;
+      opacity: 0; }
     #waypoint_1 .about_us_1 .red_line {
       width: 6em; }
     #waypoint_1 .about_us_1 .about_title {
@@ -369,7 +374,7 @@ header {
       margin-top: 2.5em;
       opacity: 0; }
   #waypoint_1 .about_us_2 {
-    padding: 15% 0; }
+    padding-bottom: 10%; }
     #waypoint_1 .about_us_2 .stacker {
       position: relative;
       width: 100%;
@@ -390,8 +395,7 @@ header {
 #waypoint_3 {
   background: #ada697 url("../img/bg_our_service.jpg") no-repeat center;
   background-size: cover;
-  padding: 7.5% 0;
-  min-height: 100vh; }
+  padding: 8.5% 0; }
   #waypoint_3 h2 {
     text-align: center; }
   #waypoint_3 .red_line {
@@ -417,12 +421,11 @@ header {
       background-size: 4.5em; }
 
 #waypoint_4 {
-  min-height: 100vh;
+  padding: 7.5% 0;
   background-color: transparent;
   color: #fff; }
   #waypoint_4 .left_side_choose img {
-    width: 85%;
-    margin: 20% 0; }
+    width: 85%; }
   #waypoint_4 .right_side_choose h2 {
     text-align: center; }
   #waypoint_4 .right_side_choose .red_line {
@@ -464,7 +467,6 @@ header {
   background-color: #040308;
   background: url("../img/man.jpg") no-repeat right bottom;
   background-size: cover;
-  min-height: 100vh;
   color: #fff;
   border-bottom: 3px solid red; }
   #waypoint_6 .left_question {
@@ -502,13 +504,16 @@ header {
         height: 140px;
         background: transparent;
         border: none;
+        outline: none;
         padding-left: 60px;
         resize: none; }
     #waypoint_6 form input[type="image"] {
       background: url("../img/button_send.png") no-repeat;
       background-size: 100% 99%;
       padding: 10px 30px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      outline: none;
+      border: none; }
 
 #waypoint_7 {
   height: 40vh;
@@ -560,7 +565,7 @@ header {
   h3 {
     font-size: 1em; }
   #waypoint_4 .right_side_choose h2 {
-    margin-top: 20%; } }
+    margin-top: 1%; } }
 
 @media (min-width: 1200px) {
   p {
@@ -568,7 +573,7 @@ header {
   h3 {
     font-size: 1.3em; }
   #waypoint_4 .right_side_choose h2 {
-    margin-top: 22%; } }
+    margin-top: 4%; } }
 
 @media (min-width: 1400px) {
   h2 {
@@ -581,8 +586,6 @@ header {
     font-size: 1.1rem; }
   .company_name h5 {
     padding-right: 10%; }
-  #waypoint_4 .right_side_choose h2 {
-    margin-top: 23%; }
   #waypoint_4 .right_side_choose table {
     margin-top: 2em; }
   #waypoint_6 h2 {
@@ -635,8 +638,6 @@ header {
       padding: 1em 0 1em 6em;
       background: url("../img/icon_sky_arrow.png") no-repeat left center;
       background-size: 5.5em; }
-  #waypoint_4 .right_side_choose h2 {
-    margin-top: 25%; }
   #waypoint_4 .right_side_choose table {
     margin-top: 2em; }
   #waypoint_6 h2 {
